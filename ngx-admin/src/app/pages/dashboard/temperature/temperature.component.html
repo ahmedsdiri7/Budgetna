@@ -1,0 +1,20 @@
+<nb-card size="giant">
+  <nb-tabset fullWidth>
+    <nb-tab tabTitle="Entreprises">
+      <nb-list>
+        <nb-list-item *ngFor="let entreprise of entreprises">
+          <nb-user [name]="entreprise.name" [title]="entreprise.raisonSocial" size="large"></nb-user>
+        </nb-list-item>
+      </nb-list>
+    </nb-tab>
+    <nb-tab tabTitle="Directions">
+      <nb-list>
+        <nb-list-item *ngFor="let direction of directions">
+          <nb-user [name]="direction.name" [title]="direction.description" size="large"></nb-user>
+        </nb-list-item>
+      </nb-list>
+    </nb-tab>
+  </nb-tabset>
+</nb-card>
+
+

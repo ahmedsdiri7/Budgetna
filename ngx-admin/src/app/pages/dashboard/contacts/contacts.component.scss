@@ -1,0 +1,26 @@
+.employee-card {
+  // Add some padding and margin if needed
+  padding: 16px;
+  margin: 16px;
+}
+
+.employee-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0; // Light border between items
+  transition: background-color 0.3s ease; // Smooth background color transition
+
+  &:hover {
+    background-color: #f5f5f5; // Light gray background on hover
+  }
+}
+
+.employee-user {
+  margin-right: 16px; // Space between user info and icon
+}
+
+.phone-icon {
+  margin-left: auto; // Push icon to the right end
+  color: #007bff; // Adjust color if needed
+}

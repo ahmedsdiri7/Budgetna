@@ -1,0 +1,17 @@
+<nb-card size="giant" class="employee-card">
+  <nb-tabset fullWidth>
+    <nb-tab tabTitle="Employees">
+      <nb-list>
+        <nb-list-item *ngFor="let name of employeNames" class="employee-item">
+          <nb-user 
+            [name]="name" 
+            size="large"
+            class="employee-user">
+          </nb-user>
+          <!-- Changed icon to user-related icon -->
+          <nb-icon icon="person-outline" pack="eva" class="user-icon"></nb-icon>
+        </nb-list-item>
+      </nb-list>
+    </nb-tab>
+  </nb-tabset>
+</nb-card>
